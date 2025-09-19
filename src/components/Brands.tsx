@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, ShoppingBag, Palette } from "lucide-react";
 import ballersLogo from "@/assets/ballers-logo.png";
+import webdoLogo from "@/assets/webdo-logo.svg";
 
 const brands = [
   {
@@ -9,14 +10,14 @@ const brands = [
     description: "Ecommerce & Web Creation | Shopify Partner",
     icon: ExternalLink,
     features: ["Custom Shopify Development", "E-commerce Solutions", "Web Design & Development"],
-    link: "#"
+    link: "https://webdoagency.com"
   },
   {
     name: "Ballers",
     description: "Streetwear Online Shop | Premium Urban Fashion",
     icon: ShoppingBag,
     features: ["Urban Streetwear", "Premium Fashion", "Limited Edition Drops"],
-    link: "#"
+    link: "https://theballersstore.com"
   },
   {
     name: "Darlise",
@@ -52,14 +53,24 @@ const Brands = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
                     <div className="p-3 rounded-2xl bg-primary/10 glow-primary">
-                      {brand.name === "Ballers" ? (
+                      {brand.name === "Webdo Agency" ? (
+                        <img 
+                          src={webdoLogo} 
+                          alt="Webdo Agency Logo" 
+                          className="w-12 h-12 object-contain"
+                        />
+                      ) : brand.name === "Ballers" ? (
                         <img 
                           src={ballersLogo} 
                           alt="Ballers Logo" 
-                          className="w-8 h-8 object-contain"
+                          className="w-12 h-12 object-contain"
                         />
+                      ) : brand.name === "Darlise" ? (
+                        <div className="w-12 h-12 flex items-center justify-center">
+                          <div className="text-2xl font-bold text-primary">D</div>
+                        </div>
                       ) : (
-                        <IconComponent className="w-8 h-8 text-primary" />
+                        <IconComponent className="w-12 h-12 text-primary" />
                       )}
                     </div>
                     <div className="w-2 h-2 bg-primary/60 rounded-full animate-pulse"></div>
@@ -94,7 +105,7 @@ const Brands = () => {
                       onClick={() => window.open(brand.link, '_blank')}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Learn More
+                      Visit Site
                     </Button>
                   )}
                 </CardContent>
