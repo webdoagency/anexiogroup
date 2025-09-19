@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, ShoppingBag, Palette } from "lucide-react";
+import ballersLogo from "@/assets/ballers-logo.png";
 
 const brands = [
   {
@@ -51,7 +52,15 @@ const Brands = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
                     <div className="p-3 rounded-2xl bg-primary/10 glow-primary">
-                      <IconComponent className="w-8 h-8 text-primary" />
+                      {brand.name === "Ballers" ? (
+                        <img 
+                          src={ballersLogo} 
+                          alt="Ballers Logo" 
+                          className="w-8 h-8 object-contain"
+                        />
+                      ) : (
+                        <IconComponent className="w-8 h-8 text-primary" />
+                      )}
                     </div>
                     <div className="w-2 h-2 bg-primary/60 rounded-full animate-pulse"></div>
                   </div>
@@ -72,13 +81,22 @@ const Brands = () => {
                     ))}
                   </div>
 
-                  <Button 
-                    className="btn-glass w-full rounded-xl"
-                    onClick={() => window.open(brand.link, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Learn More
-                  </Button>
+                  {brand.name === "Darlise" ? (
+                    <Button 
+                      className="btn-glass w-full rounded-xl opacity-60 cursor-not-allowed"
+                      disabled
+                    >
+                      Coming Soon
+                    </Button>
+                  ) : (
+                    <Button 
+                      className="btn-glass w-full rounded-xl"
+                      onClick={() => window.open(brand.link, '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Learn More
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );
