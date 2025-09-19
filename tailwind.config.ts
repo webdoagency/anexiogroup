@@ -65,25 +65,44 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "liquidFloat": {
+          "0%, 100%": { transform: "translate(-20%, -20%) rotate(0deg) scale(1)" },
+          "25%": { transform: "translate(-30%, -10%) rotate(1deg) scale(1.05)" },
+          "50%": { transform: "translate(-10%, -30%) rotate(-1deg) scale(0.95)" },
+          "75%": { transform: "translate(-25%, -25%) rotate(0.5deg) scale(1.02)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "glow": {
+          "from": { boxShadow: "0 0 20px hsl(var(--primary) / 0.3)" },
+          "to": { boxShadow: "0 0 40px hsl(var(--primary) / 0.6)" },
+        },
+        "fadeInUp": {
+          "from": { opacity: "0", transform: "translateY(30px)" },
+          "to": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slideInRight": {
+          "from": { opacity: "0", transform: "translateX(50px)" },
+          "to": { opacity: "1", transform: "translateX(0)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "liquid": "liquidFloat 20s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
+        "glow": "glow 3s ease-in-out infinite alternate",
+        "fade-in-up": "fadeInUp 0.8s ease-out",
+        "slide-in-right": "slideInRight 0.6s ease-out",
       },
     },
   },

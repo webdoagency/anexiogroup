@@ -2,41 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Anexio Group - Premium Liquid Glass Design System */
+/* All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Liquid Glass Color Palette */
+    --background: 210 25% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glass Panel System */
+    --glass-primary: 210 45% 12%;
+    --glass-secondary: 210 35% 15%;
+    --glass-accent: 210 55% 20%;
+    --glass-border: 210 30% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
+    /* Premium Blues */
+    --primary: 210 85% 25%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 210 100% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary Glass */
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent System */
+    --accent: 210 60% 30%;
+    --accent-foreground: 210 40% 98%;
+    --accent-glow: 210 100% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted Glass */
+    --muted: 210 15% 16%;
+    --muted-foreground: 210 25% 75%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Card System */
+    --card: 210 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    /* Interactive Elements */
+    --popover: 210 25% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Form Elements */
+    --input: 210 20% 18%;
+    --border: 210 25% 22%;
+    --ring: 210 85% 35%;
+
+    /* Status Colors */
+    --destructive: 0 75% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Glass Effects */
+    --glass-bg-light: 210 25% 95%;
+    --glass-bg-dark: 210 25% 8%;
+    --glass-surface: 210 20% 15%;
+    --glass-overlay: 210 30% 20%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 85% 25% / 0.9), hsl(210 65% 35% / 0.7));
+    --gradient-glass: linear-gradient(135deg, hsl(210 25% 95% / 0.1), hsl(210 25% 95% / 0.05));
+    --gradient-hero: linear-gradient(180deg, hsl(210 25% 8%), hsl(210 35% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(210 20% 12% / 0.8), hsl(210 15% 16% / 0.6));
+
+    /* Shadows & Glows */
+    --shadow-glass: 0 8px 32px hsl(210 25% 8% / 0.4);
+    --shadow-glass-hover: 0 16px 48px hsl(210 25% 8% / 0.6);
+    --glow-primary: 0 0 40px hsl(210 85% 25% / 0.3);
+    --glow-accent: 0 0 60px hsl(210 100% 60% / 0.2);
+
+    /* Animation Timings */
+    --transition-glass: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +140,201 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Glass Morphism Base Classes */
+  .glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border) / 0.2);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid hsl(var(--glass-border) / 0.15);
+    box-shadow: var(--shadow-glass);
+    transition: var(--transition-glass);
+  }
+
+  .glass-card:hover {
+    box-shadow: var(--shadow-glass-hover);
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  .glass-nav {
+    background: hsl(var(--glass-primary) / 0.8);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border-bottom: 1px solid hsl(var(--glass-border) / 0.1);
+  }
+
+  .glass-hero {
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-glass);
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  /* Liquid Glass Animation */
+  .liquid-bg {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 60%, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 40%, hsl(var(--accent-glow) / 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, hsl(var(--primary) / 0.05) 0%, transparent 50%);
+    animation: liquidFloat 20s ease-in-out infinite;
+  }
+
+  /* Button Variants */
+  .btn-glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--primary) / 0.3);
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-glass:hover {
+    background: hsl(var(--primary) / 0.2);
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: var(--glow-primary);
+    transform: translateY(-1px);
+  }
+
+  .btn-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary-foreground) / 0.1), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-glass:hover::before {
+    left: 100%;
+  }
+
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+}
+
+@layer utilities {
+  /* Glass Utilities */
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .backdrop-blur-strong {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+  }
+
+  /* Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  .animate-liquid {
+    animation: liquidFloat 20s ease-in-out infinite;
+  }
+
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes liquidFloat {
+  0%, 100% {
+    transform: translate(-20%, -20%) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(-30%, -10%) rotate(1deg) scale(1.05);
+  }
+  50% {
+    transform: translate(-10%, -30%) rotate(-1deg) scale(0.95);
+  }
+  75% {
+    transform: translate(-25%, -25%) rotate(0.5deg) scale(1.02);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  to {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
