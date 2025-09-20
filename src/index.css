@@ -2,134 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Anexio Group - Premium Liquid Glass Design System */
+/* Anexio Group - Liquid Glass Silver & Royal Blue Design System */
 /* All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Liquid Glass Color Palette */
-    --background: 210 25% 8%;
-    --foreground: 210 40% 98%;
+    /* Liquid Glass Silver Palette */
+    --background: 240 15% 8%;
+    --foreground: 210 20% 95%;
 
-    /* Glass Panel System */
-    --glass-primary: 210 45% 12%;
-    --glass-secondary: 210 35% 15%;
-    --glass-accent: 210 55% 20%;
-    --glass-border: 210 30% 25%;
+    /* Glass Panel System - Silver Tones */
+    --glass-primary: 220 15% 12%;
+    --glass-secondary: 220 12% 18%;
+    --glass-accent: 220 20% 25%;
+    --glass-border: 220 15% 35%;
 
-    /* Premium Blues */
-    --primary: 210 85% 25%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 210 100% 60%;
+    /* Primary Silver System */
+    --primary: 220 20% 75%;
+    --primary-foreground: 240 20% 15%;
+    --primary-glow: 220 30% 85%;
 
-    /* Secondary Glass */
-    --secondary: 210 20% 18%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary Glass Silver */
+    --secondary: 220 12% 22%;
+    --secondary-foreground: 220 20% 90%;
 
-    /* Accent System */
-    --accent: 210 60% 30%;
-    --accent-foreground: 210 40% 98%;
-    --accent-glow: 210 100% 70%;
+    /* Royal Blue Accent System */
+    --accent: 240 100% 35%;
+    --accent-foreground: 220 20% 95%;
+    --accent-glow: 240 100% 55%;
 
-    /* Muted Glass */
-    --muted: 210 15% 16%;
-    --muted-foreground: 210 25% 75%;
+    /* Muted Silver Glass */
+    --muted: 220 10% 20%;
+    --muted-foreground: 220 15% 70%;
 
-    /* Card System */
-    --card: 210 20% 12%;
-    --card-foreground: 210 40% 98%;
+    /* Card System - Silver Glass */
+    --card: 220 12% 15%;
+    --card-foreground: 220 20% 92%;
 
     /* Interactive Elements */
-    --popover: 210 25% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 15% 18%;
+    --popover-foreground: 220 20% 92%;
 
     /* Form Elements */
-    --input: 210 20% 18%;
-    --border: 210 25% 22%;
-    --ring: 210 85% 35%;
+    --input: 220 12% 22%;
+    --border: 220 15% 30%;
+    --ring: 240 80% 45%;
 
     /* Status Colors */
     --destructive: 0 75% 55%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 220 20% 95%;
 
-    /* Glass Effects */
-    --glass-bg-light: 210 25% 95%;
-    --glass-bg-dark: 210 25% 8%;
-    --glass-surface: 210 20% 15%;
-    --glass-overlay: 210 30% 20%;
+    /* Liquid Glass Effects */
+    --glass-bg-light: 220 25% 92%;
+    --glass-bg-dark: 240 15% 8%;
+    --glass-surface: 220 12% 18%;
+    --glass-overlay: 220 15% 25%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 85% 25% / 0.9), hsl(210 65% 35% / 0.7));
-    --gradient-glass: linear-gradient(135deg, hsl(210 25% 95% / 0.1), hsl(210 25% 95% / 0.05));
-    --gradient-hero: linear-gradient(180deg, hsl(210 25% 8%), hsl(210 35% 12%));
-    --gradient-card: linear-gradient(135deg, hsl(210 20% 12% / 0.8), hsl(210 15% 16% / 0.6));
+    /* Liquid Silver Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 25% 80% / 0.15), hsl(220 30% 70% / 0.08));
+    --gradient-glass: linear-gradient(135deg, hsl(220 25% 92% / 0.12), hsl(220 20% 88% / 0.06));
+    --gradient-hero: linear-gradient(180deg, hsl(240 15% 8%), hsl(220 18% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(220 15% 18% / 0.85), hsl(220 12% 22% / 0.65));
 
-    /* Shadows & Glows */
-    --shadow-glass: 0 8px 32px hsl(210 25% 8% / 0.4);
-    --shadow-glass-hover: 0 16px 48px hsl(210 25% 8% / 0.6);
-    --glow-primary: 0 0 40px hsl(210 85% 25% / 0.3);
-    --glow-accent: 0 0 60px hsl(210 100% 60% / 0.2);
+    /* Royal Blue Shadows & Silver Glows */
+    --shadow-glass: 0 12px 40px hsl(240 80% 15% / 0.4);
+    --shadow-glass-hover: 0 20px 60px hsl(240 80% 15% / 0.6);
+    --shadow-royal: 0 8px 32px hsl(240 100% 25% / 0.3);
+    --glow-primary: 0 0 40px hsl(220 30% 80% / 0.4);
+    --glow-accent: 0 0 60px hsl(240 100% 55% / 0.3);
+    --glow-silver: 0 0 50px hsl(220 25% 85% / 0.2);
 
-    /* Animation Timings */
-    --transition-glass: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Liquid Animation Timings */
+    --transition-glass: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-liquid: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 1rem;
+    --radius: 1.25rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Silver Theme */
+    --sidebar-background: 220 15% 15%;
+    --sidebar-foreground: 220 20% 90%;
+    --sidebar-primary: 220 25% 75%;
+    --sidebar-primary-foreground: 240 20% 15%;
+    --sidebar-accent: 240 100% 35%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 240 80% 45%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Mode - Enhanced Silver & Royal Blue */
+    --background: 240 12% 5%;
+    --foreground: 220 25% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 15% 8%;
+    --card-foreground: 220 25% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 220 25% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 30% 85%;
+    --primary-foreground: 240 15% 12%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 12% 15%;
+    --secondary-foreground: 220 25% 88%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 220 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 240 100% 45%;
+    --accent-foreground: 220 25% 92%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 220 25% 92%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 25%;
+    --input: 220 12% 18%;
+    --ring: 240 80% 50%;
+
+    /* Enhanced Dark Sidebar */
+    --sidebar-background: 240 15% 8%;
+    --sidebar-foreground: 220 25% 90%;
+    --sidebar-primary: 220 30% 80%;
+    --sidebar-primary-foreground: 240 15% 10%;
+    --sidebar-accent: 240 100% 40%;
+    --sidebar-accent-foreground: 220 25% 95%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 240 80% 50%;
   }
 }
 
@@ -145,35 +144,51 @@
 }
 
 @layer components {
-  /* Glass Morphism Base Classes */
+  /* Liquid Glass Morphism Base Classes */
   .glass {
     background: var(--gradient-glass);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid hsl(var(--glass-border) / 0.2);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid hsl(var(--glass-border) / 0.25);
     box-shadow: var(--shadow-glass);
+    transition: var(--transition-smooth);
   }
 
   .glass-card {
     background: var(--gradient-card);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid hsl(var(--glass-border) / 0.15);
-    box-shadow: var(--shadow-glass);
-    transition: var(--transition-glass);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid hsl(var(--glass-border) / 0.2);
+    box-shadow: var(--shadow-glass), var(--shadow-royal);
+    transition: var(--transition-liquid);
+    position: relative;
+    overflow: hidden;
   }
 
   .glass-card:hover {
-    box-shadow: var(--shadow-glass-hover);
-    transform: translateY(-2px);
-    border-color: hsl(var(--primary) / 0.3);
+    box-shadow: var(--shadow-glass-hover), var(--glow-silver);
+    transform: translateY(-4px) scale(1.02);
+    border-color: hsl(var(--primary) / 0.4);
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, hsl(var(--primary) / 0.1), transparent);
+    animation: liquidRotate 8s linear infinite;
+    z-index: -1;
   }
 
   .glass-nav {
-    background: hsl(var(--glass-primary) / 0.8);
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    border-bottom: 1px solid hsl(var(--glass-border) / 0.1);
+    background: hsl(var(--glass-primary) / 0.85);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-bottom: 1px solid hsl(var(--glass-border) / 0.15);
+    box-shadow: var(--shadow-royal);
   }
 
   .glass-hero {
@@ -190,38 +205,40 @@
     right: 0;
     bottom: 0;
     background: var(--gradient-glass);
-    opacity: 0.1;
+    opacity: 0.15;
     z-index: 1;
   }
 
-  /* Liquid Glass Animation */
+  /* Enhanced Liquid Glass Animation */
   .liquid-bg {
     position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 30% 60%, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 40%, hsl(var(--accent-glow) / 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 50% 80%, hsl(var(--primary) / 0.05) 0%, transparent 50%);
-    animation: liquidFloat 20s ease-in-out infinite;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(circle at 35% 65%, hsl(var(--primary-glow) / 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 75% 35%, hsl(var(--accent-glow) / 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 45% 85%, hsl(var(--primary) / 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 15% 25%, hsl(220 35% 80% / 0.06) 0%, transparent 50%);
+    animation: liquidFloat 25s ease-in-out infinite;
   }
 
-  /* Button Variants */
+  /* Enhanced Button Variants */
   .btn-glass {
     background: var(--gradient-glass);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid hsl(var(--primary) / 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--primary) / 0.35);
     color: hsl(var(--primary-foreground));
-    transition: var(--transition-smooth);
+    transition: var(--transition-liquid);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-royal);
   }
 
   .btn-glass:hover {
-    background: hsl(var(--primary) / 0.2);
-    border-color: hsl(var(--primary) / 0.5);
-    box-shadow: var(--glow-primary);
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.25), hsl(var(--accent) / 0.15));
+    border-color: hsl(var(--primary) / 0.6);
+    box-shadow: var(--glow-primary), var(--shadow-glass-hover);
+    transform: translateY(-2px) scale(1.05);
   }
 
   .btn-glass::before {
@@ -231,15 +248,32 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, hsl(var(--primary-foreground) / 0.1), transparent);
-    transition: left 0.5s;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary-glow) / 0.15), transparent);
+    transition: left 0.6s ease;
   }
 
   .btn-glass:hover::before {
     left: 100%;
   }
 
-  /* Glow Effects */
+  .btn-glass::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, hsl(var(--accent-glow) / 0.3) 0%, transparent 70%);
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-glass:hover::after {
+    width: 200%;
+    height: 200%;
+  }
+
+  /* Enhanced Glow Effects */
   .glow-primary {
     box-shadow: var(--glow-primary);
   }
@@ -247,55 +281,89 @@
   .glow-accent {
     box-shadow: var(--glow-accent);
   }
+
+  .glow-silver {
+    box-shadow: var(--glow-silver);
+  }
 }
 
 @layer utilities {
-  /* Glass Utilities */
+  /* Enhanced Glass Utilities */
   .backdrop-blur-glass {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
   }
 
   .backdrop-blur-strong {
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
   }
 
-  /* Animation Classes */
+  .backdrop-blur-liquid {
+    backdrop-filter: blur(35px) saturate(1.2);
+    -webkit-backdrop-filter: blur(35px) saturate(1.2);
+  }
+
+  /* Enhanced Animation Classes */
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
   }
 
   .animate-glow {
-    animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 4s ease-in-out infinite alternate;
   }
 
   .animate-liquid {
-    animation: liquidFloat 20s ease-in-out infinite;
+    animation: liquidFloat 25s ease-in-out infinite;
+  }
+
+  .animate-liquid-rotate {
+    animation: liquidRotate 12s linear infinite;
   }
 
   .hover-lift {
-    transition: var(--transition-smooth);
+    transition: var(--transition-liquid);
   }
 
   .hover-lift:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px) scale(1.02);
+    filter: drop-shadow(0 20px 40px hsl(var(--primary) / 0.2));
+  }
+
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--glow-silver);
   }
 }
 
-/* Keyframe Animations */
+/* Enhanced Keyframe Animations */
 @keyframes liquidFloat {
   0%, 100% {
-    transform: translate(-20%, -20%) rotate(0deg) scale(1);
+    transform: translate(-25%, -25%) rotate(0deg) scale(1);
   }
-  25% {
-    transform: translate(-30%, -10%) rotate(1deg) scale(1.05);
+  20% {
+    transform: translate(-35%, -15%) rotate(2deg) scale(1.08);
   }
-  50% {
-    transform: translate(-10%, -30%) rotate(-1deg) scale(0.95);
+  40% {
+    transform: translate(-15%, -35%) rotate(-2deg) scale(0.92);
   }
-  75% {
-    transform: translate(-25%, -25%) rotate(0.5deg) scale(1.02);
+  60% {
+    transform: translate(-30%, -30%) rotate(1deg) scale(1.05);
+  }
+  80% {
+    transform: translate(-20%, -20%) rotate(-1deg) scale(0.98);
+  }
+}
+
+@keyframes liquidRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -303,24 +371,27 @@
   0%, 100% {
     transform: translateY(0px);
   }
-  50% {
-    transform: translateY(-10px);
+  33% {
+    transform: translateY(-12px);
+  }
+  66% {
+    transform: translateY(-6px);
   }
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.4);
   }
   to {
-    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    box-shadow: 0 0 50px hsl(var(--primary) / 0.7), 0 0 80px hsl(var(--accent) / 0.3);
   }
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -331,7 +402,7 @@
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(60px);
   }
   to {
     opacity: 1;
