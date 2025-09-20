@@ -77,7 +77,7 @@ const Contact = () => {
             return <Card key={info.title} className="glass-card border-0 rounded-2xl hover-lift">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 rounded-xl bg-primary/10 glow-primary">
+                      <div className="p-3 rounded-xl glow-primary">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <div>
@@ -96,7 +96,7 @@ const Contact = () => {
           })}
 
             {/* Call to Action */}
-            <Card className="glass-card border-0 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10">
+            <Card className="glass-card border-0 rounded-2xl">
               
             </Card>
           </div>
@@ -104,8 +104,8 @@ const Contact = () => {
       </div>
 
       {/* Background Effects */}
-      <div className="absolute top-1/4 left-0 w-40 h-40 bg-primary/5 rounded-full blur-3xl animate-float [animation-delay:2s]"></div>
-      <div className="absolute bottom-1/4 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-float [animation-delay:4s]"></div>
+      <div className="absolute top-1/4 left-0 w-40 h-40 rounded-full blur-3xl animate-float [animation-delay:2s]"></div>
+      <div className="absolute bottom-1/4 right-0 w-32 h-32 rounded-full blur-3xl animate-float [animation-delay:4s]"></div>
     </section>;
 };
 export default Contact;

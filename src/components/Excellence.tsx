@@ -34,7 +34,7 @@ const Excellence = () => {
             animationDelay: `${index * 0.3}s`
           }}>
                 <div className="flex justify-center lg:justify-start mb-6">
-                  <div className="p-4 rounded-2xl bg-primary/10 glow-primary group-hover:bg-primary/20 transition-colors">
+                  <div className="p-4 rounded-2xl glow-primary group-hover:transition-colors">
                     <IconComponent className="w-10 h-10 text-primary" />
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const Excellence = () => {
 
                 {/* Decorative element */}
                 <div className="mt-6 flex justify-center lg:justify-start">
-                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-16 h-1 rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
                 </div>
               </div>;
         })}

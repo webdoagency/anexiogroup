@@ -15,11 +15,11 @@ const Hero = () => {
       
       {/* 3D Network Nodes */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/6 w-3 h-3 bg-primary/40 rounded-full animate-float [animation-delay:0s] shadow-lg shadow-primary/20"></div>
-        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-accent/30 rounded-full animate-float [animation-delay:1s] shadow-md shadow-accent/15"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-primary-glow/50 rounded-full animate-float [animation-delay:2s] shadow-lg shadow-primary/25"></div>
-        <div className="absolute bottom-1/4 right-1/6 w-2.5 h-2.5 bg-accent-glow/40 rounded-full animate-float [animation-delay:3s] shadow-md shadow-accent/20"></div>
-        <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-primary/60 rounded-full animate-float [animation-delay:4s] shadow-sm shadow-primary/30"></div>
+        <div className="absolute top-1/4 left-1/6 w-3 h-3 rounded-full animate-float [animation-delay:0s] shadow-lg shadow-primary/20"></div>
+        <div className="absolute top-1/3 right-1/4 w-2 h-2 rounded-full animate-float [animation-delay:1s] shadow-md shadow-accent/15"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 rounded-full animate-float [animation-delay:2s] shadow-lg shadow-primary/25"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-2.5 h-2.5 rounded-full animate-float [animation-delay:3s] shadow-md shadow-accent/20"></div>
+        <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 rounded-full animate-float [animation-delay:4s] shadow-sm shadow-primary/30"></div>
         
         {/* Connecting Lines */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">

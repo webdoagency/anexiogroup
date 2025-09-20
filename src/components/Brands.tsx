@@ -52,7 +52,7 @@ const Brands = () => {
               >
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
-                    <div className="p-3 rounded-2xl bg-primary/10 glow-primary">
+                    <div className="p-3 rounded-2xl glow-primary">
                       {brand.name === "Webdo Agency" ? (
                         <img 
                           src={webdoLogo} 
@@ -73,7 +73,7 @@ const Brands = () => {
                         <IconComponent className="w-12 h-12 text-primary" />
                       )}
                     </div>
-                    <div className="w-2 h-2 bg-primary/60 rounded-full animate-pulse"></div>
+                    <div className="w-2 h-2 rounded-full animate-pulse"></div>
                   </div>
 
                   <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
@@ -86,7 +86,7 @@ const Brands = () => {
                   <div className="space-y-2 mb-8">
                     {brand.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                        <div className="w-1.5 h-1.5 rounded-full mr-3"></div>
                         {feature}
                       </div>
                     ))}
@@ -115,8 +115,8 @@ const Brands = () => {
         </div>
 
         {/* Floating background elements */}
-        <div className="absolute top-1/4 right-10 w-32 h-32 bg-primary/5 rounded-full blur-xl animate-float [animation-delay:1s]"></div>
-        <div className="absolute bottom-1/4 left-10 w-24 h-24 bg-accent/5 rounded-full blur-xl animate-float [animation-delay:3s]"></div>
+        <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full blur-xl animate-float [animation-delay:1s]"></div>
+        <div className="absolute bottom-1/4 left-10 w-24 h-24 rounded-full blur-xl animate-float [animation-delay:3s]"></div>
       </div>
     </section>
   );
