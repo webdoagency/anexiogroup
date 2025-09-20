@@ -72,14 +72,39 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Viral AI Badge */}
+        <div className="mb-8 text-center">
+          <div className="inline-flex items-center glass-card px-4 py-2 rounded-full border border-primary/20 hover:border-primary/40 transition-all hover-lift">
+            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-accent animate-pulse mr-3"></div>
+            <span className="text-sm font-medium text-foreground">
+              🤖 AI-Designed. Human-Perfected. 
+              <span className="text-primary font-semibold ml-1">Webdo-Delivered.</span>
+            </span>
+            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-accent to-primary animate-pulse ml-3"></div>
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 opacity-70">
+            "The future of web design is here – and it's collaborative" ✨
+          </p>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
               © {currentYear} Anexio Group. All rights reserved.
             </p>
-            
-            
+            <div className="flex items-center space-x-4">
+              <a 
+                href="https://webdoagency.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors flex items-center group"
+              >
+                Powered by 
+                <span className="font-semibold ml-1 text-primary">Webdo Agency</span>
+                <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
