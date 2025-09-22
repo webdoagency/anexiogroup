@@ -43,7 +43,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
             <span className="text-foreground">Multi-brand</span>
             <br />
-            <span className="text-primary glow-primary">business partner</span>
+            <span className="text-foreground">business partner</span>
             <br />
             <span className="text-foreground">connecting enterprises</span>
           </h1>
