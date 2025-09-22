@@ -1,5 +1,4 @@
 import { ExternalLink } from "lucide-react";
-import anexioLogo from "@/assets/anexio-logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const brandLinks = [{
@@ -31,7 +30,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex flex-col mb-4">
-              <img src={anexioLogo} alt="Anexio Group Logo" className="h-12 w-auto mb-2" />
+              <span className="text-2xl font-bold text-foreground">
+                Anexio Group
+              </span>
               <span className="text-sm text-muted-foreground">
                 Where Everything Connects
               </span>
