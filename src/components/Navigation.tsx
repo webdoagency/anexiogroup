@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import anexioLogo from "@/assets/anexio-logo.png";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -13,13 +14,20 @@ const Navigation = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex flex-col">
-            <span className="text-2xl font-bold text-foreground">
-              Anexio Group
-            </span>
-            <span className="text-sm text-muted-foreground -mt-1">
-              Where Everything Connects
-            </span>
+          <div className="flex items-center gap-3">
+            <img 
+              src={anexioLogo} 
+              alt="Anexio Group Logo" 
+              className="h-12 w-auto"
+            />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground">
+                Anexio Group
+              </span>
+              <span className="text-xs text-muted-foreground -mt-1">
+                Where Everything Connects
+              </span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
