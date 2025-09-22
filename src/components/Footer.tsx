@@ -73,16 +73,16 @@ const Footer = () => {
         </div>
 
         {/* Viral AI Badge */}
-        <div className="mb-8 text-center">
-          <div className="inline-flex items-center glass-card px-4 py-2 rounded-full border border-primary/20 hover:border-primary/40 transition-all hover-lift">
-            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-primary to-accent animate-pulse mr-3"></div>
-            <span className="text-sm font-medium text-foreground">
+        <div className="mb-4 text-center">
+          <div className="inline-flex items-center glass-card px-2 py-1 rounded-full border border-primary/20 hover:border-primary/40 transition-all hover-lift">
+            <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-primary to-accent animate-pulse mr-2"></div>
+            <span className="text-xs font-medium text-foreground">
               🤖 AI-Designed. Human-Perfected. 
               <span className="text-primary font-semibold ml-1">Webdo-Delivered.</span>
             </span>
-            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-accent to-primary animate-pulse ml-3"></div>
+            <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-accent to-primary animate-pulse ml-2"></div>
           </div>
-          <p className="text-xs text-muted-foreground mt-2 opacity-70">
+          <p className="text-[10px] text-muted-foreground mt-1 opacity-70">
             "The future of web design is here – and it's collaborative" ✨
           </p>
         </div>
