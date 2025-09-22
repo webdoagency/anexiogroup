@@ -21,7 +21,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Let's <span className="text-primary glow-primary">Connect</span>
+            Let's <span className="text-primary">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to transform your business? Get in touch with our team
@@ -77,7 +77,7 @@ const Contact = () => {
             return <Card key={info.title} className="glass-card border-0 rounded-2xl hover-lift">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 rounded-xl glow-primary">
+                      <div className="p-3 rounded-xl">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <div>

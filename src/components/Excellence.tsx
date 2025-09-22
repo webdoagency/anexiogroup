@@ -20,7 +20,7 @@ const Excellence = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Corporate <span className="text-primary glow-primary">Excellence</span>
+            Corporate <span className="text-primary">Excellence</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Built on trust, driven by results, powered by innovation
@@ -34,7 +34,7 @@ const Excellence = () => {
             animationDelay: `${index * 0.3}s`
           }}>
                 <div className="flex justify-center lg:justify-start mb-6">
-                  <div className="p-4 rounded-2xl glow-primary group-hover:transition-colors">
+                  <div className="p-4 rounded-2xl group-hover:transition-colors">
                     <IconComponent className="w-10 h-10 text-primary" />
                   </div>
                 </div>

@@ -17,7 +17,7 @@ const NotFound = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto">
           <div className="glass-card p-12 rounded-3xl">
-            <h1 className="text-6xl md:text-8xl font-bold text-primary glow-primary mb-4">404</h1>
+            <h1 className="text-6xl md:text-8xl font-bold text-primary mb-4">404</h1>
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Page Not Found
             </h2>

@@ -34,7 +34,7 @@ const Brands = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Our <span className="text-primary glow-primary">Brand Portfolio</span>
+            Our <span className="text-primary">Brand Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Discover our diverse ecosystem of premium brands, each excelling in their respective markets
@@ -52,7 +52,7 @@ const Brands = () => {
               >
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
-                    <div className="p-3 rounded-2xl glow-primary">
+                    <div className="p-3 rounded-2xl">
                       {brand.name === "Webdo Agency" ? (
                         <img 
                           src={webdoLogo} 
