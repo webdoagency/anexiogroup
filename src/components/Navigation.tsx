@@ -15,15 +15,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img 
-              src={anexioLogo} 
-              alt="Anexio Group Logo" 
-              className="h-12 w-auto"
-            />
+            <img src={anexioLogo} alt="Anexio Group Logo" className="h-12 w-auto" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">
-                Anexio Group
-              </span>
+              
               <span className="text-xs text-muted-foreground -mt-1">
                 Where Everything Connects
               </span>
