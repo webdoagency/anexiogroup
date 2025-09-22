@@ -16,8 +16,8 @@ const excellencePoints = [{
   detail: "Zero initial investment required. We prove our value through measurable outcomes and performance"
 }];
 const Excellence = () => {
-  return <section className="py-20 px-6 lg:px-8 relative">
-      <div className="container mx-auto">
+  return <section className="py-20 relative">
+      <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Corporate <span className="text-primary">Excellence</span>

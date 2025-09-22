@@ -30,8 +30,8 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section id="brands" className="py-20 px-6 lg:px-8 relative">
-      <div className="container mx-auto">
+    <section id="brands" className="py-20 relative">
+      <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Our <span className="text-primary">Brand Portfolio</span>
